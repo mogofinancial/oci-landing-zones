@@ -1,14 +1,14 @@
 # Provider 
-current_user_ocid    = "## YOUR USER OCID ##"
-region               = "## OCI REGION TO DEPLOY TO"
-tenancy_ocid         = "## YOUR TENANCY OCID ##"
-api_fingerprint      = "## YOUR OCI API KEY FINGERPRINT ##"
-api_private_key_path = "## YOUR OCI API PRIVATE KEY FILE ##"
+current_user_ocid    = "ocid1.user.oc1..aaaaaaaauuni5a3mpsr57t2qptc4o6h5elpmamnuwnlhsokxylkwmuuuvmpa"
+region               = "ca-toronto-1"
+tenancy_ocid         = "ocid1.tenancy.oc1..aaaaaaaa7utkizmp3japqoofiky4q5tsgkt3fq7uytvzkozpzkk6lcmj2a3q"
+api_fingerprint      = "af:36:85:6e:3b:fe:df:9f:28:0c:2f:b9:3c:be:83:54"
+api_private_key_path = "/Volumes/Private Keys/ist-devops@mogo.ca_2023-07-27T19_13_47.292Z.pem"
 
 # iam
 resource_label             = "DEMO"
-prod_domain_admin_email    = "an-example-email-address@oracle.com"
-nonprod_domain_admin_email = "an-example-email-address@oracle.com"
+prod_domain_admin_email    = "ist-devops@mogo.ca"
+nonprod_domain_admin_email = "ist-devops@mogo.ca"
 enable_compartment_delete  = false
 
 # security
