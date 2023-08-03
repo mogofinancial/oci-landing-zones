@@ -21,7 +21,7 @@ __pycache__/
 .terraform
 terraform.tfplan
 terraform.tfstate
-terraform.tfvars
+#terraform.tfvars
 .terraform.tfstate.lock.info
 
 test/terraform/*/provider.tf
