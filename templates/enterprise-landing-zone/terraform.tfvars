@@ -1,7 +1,14 @@
+
+current_user_ocid = "ocid1.user.oc1..aaaaaaaafq3slyrv7yfm62jnad5lszkjm4ocxdesxetoweddwlrszrsxbqjq"
+api_fingerprint = "39:c0:33:a2:69:b2:e8:18:52:43:98:f3:46:cd:d5:fa"
+tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaaph23xltusrbl634juawune2igo6ktvw57aopm2wsmhzceizxxlga"
+region = "ca-toronto-1"
+api_private_key_path = "/Users/liam.helmer/oracle/ist-devops@mogo.ca_2023-08-17T23_43_56.925Z.pem"
+
 # Provider 
 #current_user_ocid    = "ocid1.user.oc1..aaaaaaaauuni5a3mpsr57t2qptc4o6h5elpmamnuwnlhsokxylkwmuuuvmpa"
-region               = "ca-toronto-1"
-tenancy_ocid         = "ocid1.tenancy.oc1..aaaaaaaa7utkizmp3japqoofiky4q5tsgkt3fq7uytvzkozpzkk6lcmj2a3q"
+#region               = "ca-toronto-1"
+#tenancy_ocid         = "ocid1.tenancy.oc1..aaaaaaaaph23xltusrbl634juawune2igo6ktvw57aopm2wsmhzceizxxlga"
 #api_fingerprint      = "af:36:85:6e:3b:fe:df:9f:28:0c:2f:b9:3c:be:83:54"
 #api_private_key_path = "/Volumes/Private Keys/ist-devops@mogo.ca_2023-07-27T19_13_47.292Z.pem"
 
@@ -24,11 +31,11 @@ nonprod_bastion_client_cidr_block_allow_list = ["10.0.0.0/16", "10.0.0.0/24"]
 # budget
 nonprod_enable_budget                = true
 prod_enable_budget                   = true
-nonprod_budget_alert_rule_message    = "test"
+nonprod_budget_alert_rule_message    = "nonprod budget alert"
 nonprod_budget_alert_rule_recipients = "ist-devops@mogo.ca"
 nonprod_budget_alert_rule_threshold  = 1000000
 nonprod_budget_amount                = 10000000
-prod_budget_alert_rule_message       = "test"
+prod_budget_alert_rule_message       = "prod budget alert"
 prod_budget_alert_rule_recipients    = "ist-devops@mogo.ca"
 prod_budget_alert_rule_threshold     = 1000000
 prod_budget_amount                   = 10000000
@@ -73,10 +80,10 @@ nonprod_hub_vcn_cidr_block            = "10.88.0.0/16"
 nonprod_hub_public_subnet_cidr_block  = "10.88.1.0/24"
 nonprod_hub_private_subnet_cidr_block = "10.88.2.0/24"
 
-nonprod_spoke_vcn_cidr              = "10.88.0.0/16"
-nonprod_spoke_subnet_web_cidr_block = "10.88.1.0/24"
-nonprod_spoke_subnet_app_cidr_block = "10.88.2.0/24"
-nonprod_spoke_subnet_db_cidr_block  = "10.88.3.0/24"
+nonprod_spoke_vcn_cidr              = "10.89.0.0/16"
+nonprod_spoke_subnet_web_cidr_block = "10.89.1.0/24"
+nonprod_spoke_subnet_app_cidr_block = "10.89.2.0/24"
+nonprod_spoke_subnet_db_cidr_block  = "10.89.3.0/24"
 
 # Tagging
 prod_enable_tagging          = true
